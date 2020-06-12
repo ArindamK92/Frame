@@ -1,0 +1,14 @@
+﻿  Compiling CUDA source file FrameMain.cu...
+  
+  C:\Users\khand\source\repos\FrameBasedSSSP\FrameBasedSSSP>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\FrameMain.cu.obj "C:\Users\khand\source\repos\FrameBasedSSSP\FrameBasedSSSP\FrameMain.cu" 
+C:\Users\khand\source\repos\FrameBasedSSSP\FrameBasedSSSP\all_structure_cuda.cuh(49): warning : variable "prev_node" was set but never used
+  
+  FrameMain.cu
+  reader.cpp
+C:\Users\khand\source\repos\FrameBasedSSSP\FrameBasedSSSP\reader.cpp(24,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : see declaration of 'fopen'
+C:\Users\khand\source\repos\FrameBasedSSSP\FrameBasedSSSP\reader.cpp(32,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : see declaration of 'sscanf'
+reader.obj : error LNK2005: main already defined in FrameMain.cu.obj
+     Creating library C:\Users\khand\source\repos\FrameBasedSSSP\x64\Debug\FrameBasedSSSP.lib and object C:\Users\khand\source\repos\FrameBasedSSSP\x64\Debug\FrameBasedSSSP.exp
+C:\Users\khand\source\repos\FrameBasedSSSP\x64\Debug\FrameBasedSSSP.exe : fatal error LNK1169: one or more multiply defined symbols found
